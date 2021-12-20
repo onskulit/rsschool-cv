@@ -3,9 +3,13 @@
 ## Contact information
 
 **Phone (BY):** +375 (29) 561-29-11
+
 **Phone (RU):** +7 (925) 599-69-97
+
 **E-mail:** [dislaty@mail.ru](mailto:dislaty@mail.ru)
+
 **Telegram:** [@dislaty](https://t.me/dislaty)
+
 **GitHub:** [onskulit](https://github.com/onskulit)
 
 ## About me
@@ -43,19 +47,19 @@ function findUniq(arr) {
 ## Education
 
 * National Research Nuclear University MEPhI
-+ economic security
+    + economic security
 
 ## Courses
 
 * HTML and CSS Tutorials on the [www.htmlacademy.ru](https://htmlacademy.ru/study)
 * JavaScript course on Udemy - [JavaScript - The Complete Guide 2021 (Beginner + Advanced)](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/) (aborted after DOM topic in connection with the start of the RSSchool courses)
-* JavaScript Manual on learnjavascript.ru (in progress)
+* JavaScript Manual on [learnjavascript.ru](https://learn.javascript.ru/) (in progress)
 * RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
 
 ## Languages
 
 * Russian - Native
 * English - Upper-intermediate (advanced - according to the online test at [www.efset.org](https://www.efset.org/quick-check/)):
-+ At my current job, I often contact foreign colleagues, so my English is at a sufficient level.
-+ On the programming side: I learned the basics of JS on the Udemy English course
-![EFSet English test Results](\img\efset-english-test.PNG)
+    + At my current job, I often contact foreign colleagues, so my English is at a sufficient level.
+    + On the programming side: I learned the basics of JS on the Udemy English course
+![EFSet English test Results](/img/efset-english-test.PNG)
