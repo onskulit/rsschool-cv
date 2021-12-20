@@ -16,7 +16,7 @@
 
 I am 23 years old, the last year I have been working as a procurement specialist in the Russian branch of an Italian energy company. Before that, I worked for a year as a project manager in a design company.
 
-I started to develop in the field of front-end development, as I realized that there was not enough work for me on which I only use my soft-skills. I want to feel like I'm using my full potential, doing something worthwhile and meaningful. Ever since I started learning programming, I feel like my brain is working to its fullest. This gives me great pleasure!
+I started to develop myself in programming, as I realized that at work it's not enough for me to use only soft skills. I want to feel like I'm using my full potential, doing something worthwhile and meaningful. Ever since I started learning programming, I feel like my brain is working to its fullest. This gives me great pleasure!
 
 I believe that using my personal qualities I can achieve a lot in development.
 
@@ -62,4 +62,6 @@ function findUniq(arr) {
 * English - Upper-intermediate (advanced - according to the online test at [www.efset.org](https://www.efset.org/quick-check/)):
     + At my current job, I often contact foreign colleagues, so my English is at a sufficient level.
     + On the programming side: I learned the basics of JS on the Udemy English course
-![EFSet English test Results](/img/efset-english-test.PNG)
+
+
+![EFSet English test Results](/img/efset-english-test.PNG "EFSet English test Results")
