@@ -1,3 +1,11 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
 header {
     background-color:aqua;
 }
