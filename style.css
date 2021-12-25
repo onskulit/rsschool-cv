@@ -54,3 +54,7 @@ html {
 .nav-link:hover {
     background-color: rgb(221, 221, 221);
 }
+
+.section {
+    border: solid black 1px;
+}
