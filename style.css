@@ -16,18 +16,16 @@ html {
   }
 
 .header {
-    border: grey solid 1px;
     background-color: rgb(253, 226, 231);
 }
 
 .main {
-    border: grey solid 1px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .footer {
-    border: grey solid 1px;
+    background-color: rgb(253, 226, 231);
 }
 
 .container {
@@ -57,15 +55,45 @@ html {
     background-color: rgb(221, 221, 221);
 }
 
-.section {
-    border: solid black 1px;
-    width: 50%;
+.section-profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    width:100%;
+    color: rgb(40, 40, 40);
+    border-bottom: solid rgb(221, 221, 221) 10px;
 }
 
-.section-profile {
-    border: solid black 1px;
-    width:100%;
+.section {
+    width: 50%;
+    padding: 20px;
+    color: rgb(40, 40, 40);
+    border-bottom: solid rgb(221, 221, 221) 5px;
 }
+
+.section:nth-last-child(2), .section:last-child {
+    border-bottom: none;
+}
+
+.section ul {
+    list-style-image: url(img/bullit-ico.png);
+}
+
+.section ul li ul {
+    list-style-image: none;
+}
+
+.section a {
+    color: rgb(211, 124, 140);
+    text-decoration: none;
+    transition: .3s;
+}
+
+.section a:hover {
+    background-color: rgb(221, 221, 221);
+}
+
 
 @media (max-width: 768px) {
     .section {
