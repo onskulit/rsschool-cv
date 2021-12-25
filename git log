@@ -1,0 +1,16 @@
+[33mcommit 713837eceb369e06966a2028f7b65d792170566c[m[33m ([m[1;36mHEAD -> [m[1;32mrsschool-cv-html[m[33m, [m[1;31morigin/rsschool-cv-html[m[33m)[m
+Author: onskulit <dislaty@mail.com>
+Date:   Tue Dec 21 09:26:44 2021 +0300
+
+    docs: update link
+
+[1mdiff --git a/README.md b/README.md[m
+[1mindex 7581792..8413d80 100644[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@ -1,2 +1,2 @@[m
+ # rsschool-cv[m
+[31m-https://onskulit.github.io/rsschool-cv/cv[m
+\ No newline at end of file[m
+[32m+[m[32mhttps://onskulit.github.io/rsschool-cv/[m
+\ No newline at end of file[m
