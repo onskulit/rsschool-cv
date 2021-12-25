@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV LD</title>
+    <title>CV Latyshev</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">  
@@ -26,43 +26,88 @@
         </nav>
     </header>
     <main class="main">
-        <img src="img/my-photo.jpg" alt="avatar" width="250">
         <div class="container"></div>
-        <section class="section" id="profile">
+        <section class="section-profile" id="profile">
+            <img src="img/my-photo.jpg" alt="avatar" width="250">
             <h1 class="section-title">LATYSHEV DMITRIY</h1>
-            <p></p>
         </section>
         <section class="section" id="contacts">
             <h2 class="section-title">CONTACT INFORMATION</h2>
-            <p></p>
+            <ul>
+                <li>Phone (BY): +375 (29) 561-29-11</li>
+                <li>Phone (RU): +7 (925) 599-69-97</li>
+                <li>E-mail: <a href="mailto:dislaty@mail.ru">dislaty@mail.ru</a></li>
+                <li>Telegram: <a href="https://t.me/dislaty">@dislaty</a></li>
+                <li>GitHub: <a href="https://github.com/onskulit">onskulit</a></li>
+            </ul>
         </section>
         <section class="section" id="about-me">
             <h2 class="section-title">ABOUT ME</h2>
-            <p></p>
+            <p>
+            I am 23 years old, the last year I have been working as a procurement specialist in the Russian branch of an Italian energy company. Before that, I worked for a year as a project manager in a design company.
+            I started to develop myself in programming, as I realized that at work it's not enough for me to use only soft skills. I want to feel like I'm using my full potential, doing something worthwhile and meaningful. Ever since I started learning programming, I feel like my brain is working to its fullest. This gives me great pleasure!
+            I believe that using my personal qualities I can achieve a lot in development.
+            </p>
         </section>
         <section class="section" id="skills">
             <h2 class="section-title">SKILLS</h2>
-            <p></p>
+            <ul>
+                <li>HTML5, CSS3</li>
+                <li>JavaScript Basics</li>
+                <li>Git, GitHub</li>
+                <li>VS Code</li>
+            </ul>
         </section>
         <section class="section" id="code-example">
             <h2 class="section-title">CODE EXAMPLE</h2>
-            <p></p>
+            <p><b>Assignment</b> There is an array with some numbers. All numbers are equal except for one. Try to find it! </p>
+            <code>
+                function findUniq(arr) {<br>
+                    let sortedArray = arr.slice().sort((a, b) => a - b);<br>
+                    <br>
+                    if (sortedArray[0] < sortedArray[1]) {<br>
+                      return sortedArray[0];<br>
+                    } else if (sortedArray[sortedArray.length - 2] < sortedArray[sortedArray.length - 1]) {<br>
+                      return sortedArray[sortedArray.length - 1];<br>
+                    }<br>
+                  } <br>
+            </code>
+            <img src="https://www.codewars.com/users/dislaty/badges/large" alt="Codewars badge">
         </section>
         <section class="section" id="education">
             <h2 class="section-title">EDUCATION</h2>
-            <p></p>
+            <ul>
+                <li> National Research Nuclear University MEPhI
+                    <ul>
+                        <li> economic security </li>
+                    </ul>
+                </li>
+            </ul>
         </section>
         <section class="section" id="courses">
             <h2 class="section-title">COURSES</h2>
-            <p></p>
+            <ul>
+                <li>HTML and CSS Tutorials on the <a href="https://htmlacademy.ru/study">www.htmlacademy.ru</a></li>
+                <li>JavaScript course on Udemy - <a href="https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/">JavaScript - The Complete Guide 2021 (Beginner + Advanced)</a> (aborted after DOM topic in connection with the start of the RSSchool courses)</li>
+                <li>JavaScript Manual on <a href="https://learn.javascript.ru/">learnjavascript.ru</a> (in progress)</li>
+                <li>RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
+            </ul>
         </section>
         <section class="section" id="languages">
             <h2 class="section-title">LANGUAGES</h2>
-            <p></p>
+            <ul>
+                <li>Russian - Native</li>
+                <li> English - Upper-intermediate (advanced - according to the online test at <a href="https://www.efset.org/quick-check/">):</a>
+                    <ul>
+                        <li>At my current job, I often contact foreign colleagues, so my English is at a sufficient level.</li>
+                        <li>On the programming side: I learned the basics of JS on the Udemy English course</li>
+                    </ul>
+                </li>
+            </ul>
+            <img src="img/efset-english-test.PNG" alt="EFSet English test Results">
         </section>
     </main>
     <footer class="footer">
-        <div class="container"></div>
     </footer>
 </body>
 </html>

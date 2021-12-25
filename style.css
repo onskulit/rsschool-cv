@@ -22,6 +22,8 @@ html {
 
 .main {
     border: grey solid 1px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer {
@@ -57,4 +59,20 @@ html {
 
 .section {
     border: solid black 1px;
+    width: 50%;
+}
+
+.section-profile {
+    border: solid black 1px;
+    width:100%;
+}
+
+@media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+
+    .nav-list {
+        justify-content: center;
+    }
 }
