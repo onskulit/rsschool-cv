@@ -65,3 +65,10 @@ function findUniq(arr) {
 
 
 ![EFSet English test Results](/img/efset-english-test.PNG "EFSet English test Results")
+
+## Hobbies
+
+* Cinema
+* Urbanism
+* Basketball
+* Literature
