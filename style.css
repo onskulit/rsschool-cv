@@ -1,0 +1,159 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    margin: 0; padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+.header {
+    background-color: rgb(253, 226, 231);
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer {
+    background-color: rgb(253, 226, 231);
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    font-size: 18px;
+    color: rgb(40, 40, 40);
+    border-left: rgb(40, 40, 40) solid 1px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.nav-link:hover {
+    background-color: rgb(221, 221, 221);
+}
+
+.section-profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    width:100%;
+    color: rgb(40, 40, 40);
+    border-bottom: solid rgb(221, 221, 221) 10px;
+}
+
+.section {
+    width: 50%;
+    padding: 20px;
+    color: rgb(40, 40, 40);
+    border-bottom: solid rgb(221, 221, 221) 5px;
+}
+
+.section p {
+    line-height: 1.5em;
+}
+
+.section:nth-last-child(2), .section:last-child {
+    border-bottom: none;
+}
+
+.section ul {
+    list-style-image: url(img/bullit-ico.png);
+    line-height: 1.5em;
+}
+
+.section ul li ul {
+    list-style-image: none;
+}
+
+.section a {
+    color: rgb(211, 124, 140);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.section a:hover {
+    background-color: rgb(221, 221, 221);
+}
+
+.footer div {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-name {
+    padding: 0 20px;
+    line-height: 50px;
+    font-size: 18px;
+    color: rgb(40, 40, 40);
+}
+
+.github-link {
+    padding: 0 20px;
+    line-height: 50px;
+    font-size: 18px;
+    color: rgb(40, 40, 40);
+    border-left: rgb(40, 40, 40) solid 1px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.github-link:hover {
+    background-color: rgb(221, 221, 221);
+}
+
+.rsschool-logo {
+    padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+
+    .nav-list {
+        justify-content: center;
+    }
+
+    .section:nth-last-child(2) {
+        border-bottom: solid rgb(221, 221, 221) 5px;
+    }
+
+    .footer {
+        justify-content: space-around;
+    }
+
+    .section-profile {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
