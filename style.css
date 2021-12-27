@@ -131,6 +131,10 @@ html {
     background-color: rgb(221, 221, 221);
 }
 
+.rsschool-logo {
+    padding: 0 20px;
+}
+
 @media (max-width: 768px) {
     .section {
       width: 100%;
@@ -138,5 +142,18 @@ html {
 
     .nav-list {
         justify-content: center;
+    }
+
+    .section:nth-last-child(2) {
+        border-bottom: solid rgb(221, 221, 221) 5px;
+    }
+
+    .footer {
+        justify-content: space-around;
+    }
+
+    .section-profile {
+        flex-direction: column;
+        justify-content: flex-start;
     }
 }
