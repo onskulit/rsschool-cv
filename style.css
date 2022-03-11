@@ -1,7 +1,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
-    margin: 0; padding: 0;
+    max-width: 1440px;
+    margin: 0 auto; padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -80,16 +81,16 @@ html {
     line-height: 1.5em;
 }
 
-.section:nth-last-child(2), .section:last-child {
+.section:last-child {
     border-bottom: none;
 }
 
-.section ul {
+.regular-list {
     list-style-image: url(img/bullit-ico.png);
     line-height: 1.5em;
 }
 
-.section ul li ul {
+.regular-list li ul {
     list-style-image: none;
 }
 
@@ -103,9 +104,93 @@ html {
     background-color: rgb(221, 221, 221);
 }
 
+.projects-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 45%;
+}
+
+.project__cover {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-image: url('./img/projects/potfolio.PNG');
+    background-size: 120% auto;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+
+.project:hover .project__cover {
+    box-shadow: 0px 0px 5px 8px rgba(36, 36, 36, 0.2);
+    background-size: 140% auto;
+}
+
+.project__tags {
+    margin: 0; padding: 0;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -40%;
+    width: 80%;
+    display: none;
+    justify-content: center;
+    gap: 5px;
+    list-style-type: none;
+}
+
+.project:hover .project__tags {
+    display: flex;
+}
+
+.tag {
+    color: rgb(40, 40, 40);
+    padding: 0 10px;
+    background-color: rgb(221, 221, 221);
+    opacity: 70%;
+    border-radius: 10px;
+}
+
+.project-title {
+    position: relative;
+    padding: 0 10px 10px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.project-title:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;    
+    background-color: rgb(211, 124, 140);
+    transition: 0.3s;
+}
+
+.project:hover .project-title:after  {
+    width: 50%;
+}
+
 .footer div {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -155,5 +240,13 @@ html {
     .section-profile {
         flex-direction: column;
         justify-content: flex-start;
+    }
+
+    .projects-section {
+        justify-content: start;
+    }
+
+    .project {
+        width: 90%;
     }
 }
