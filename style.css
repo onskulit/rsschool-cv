@@ -123,10 +123,21 @@ html {
     width: 45%;
 }
 
-.project__cover {
+.ratio-inner {
     position: relative;
-    width: 100%;
-    height: 320px;
+    height: 0;
+    border: none;
+    padding-top: 50%;
+}
+
+.project__cover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    background-image: url('/img/projects/potfolio.PNG');
     background-size: 120% auto;
     background-position: center 0;
     background-repeat: no-repeat;

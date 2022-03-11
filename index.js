@@ -41,14 +41,15 @@ const createProject = (project) => {
     projectContainer.classList.add('project');
     projectsContainer.append(projectContainer);
 
-    const deploy = document.createElement('a');
-    deploy.href = project.deploySrc;
-    projectContainer.append(deploy);
+    const ratioInner = document.createElement('div');
+    ratioInner.classList.add('ratio-inner');
+    projectContainer.append(ratioInner)
 
-    const cover = document.createElement('div');
+    const cover = document.createElement('a');
+    cover.href = project.deploySrc;
     cover.classList.add('project__cover');
     cover.style.backgroundImage = `url(${project.imgSrc})`;
-    deploy.append(cover);
+    ratioInner.append(cover);
 
     const tags = document.createElement('ul');
     tags.classList.add('project__tags');
@@ -82,7 +83,7 @@ projects.forEach(project => {
 })
 
 /*
-<div class="project">
+                <div class="project">
                     <a href="https://onskulit.github.io/stage0-projects/portfolio/">
                         <div class="project__cover">
                             <ul class="project__tags">
