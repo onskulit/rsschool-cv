@@ -27,8 +27,14 @@
               <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
             </ul>
         </nav>
+        <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
     </header>
     <main class="main">
+        <div class="backdrop"></div>
         <div class="container"></div>
         <section class="profile" id="profile">
             <img src="img/my-photo.jpg" alt="avatar" width="250">
@@ -65,17 +71,17 @@
         </section>
         <section class="section" id="code-example">
             <h2 class="section-title">CODE EXAMPLE</h2>
-            <p><b>Assignment:</b> There is an array with some numbers. All numbers are equal except for one. Try to find it! </p>
+            <p><b>Assignment:</b> Your task is to create a function deepCount that returns the number of ALL elements within an array, including any within inner-level arrays. </p>
             <code>
-                function findUniq(arr) {<br>
-                    let sortedArray = arr.slice().sort((a, b) => a - b);<br>
-                    <br>
-                    if (sortedArray[0] &lt; sortedArray[1]) {<br>
-                      return sortedArray[0];<br>
-                    } else if (sortedArray[sortedArray.length - 2] &lt; sortedArray[sortedArray.length - 1]) {<br>
-                      return sortedArray[sortedArray.length - 1];<br>
-                    }<br>
-                  } <br><br>
+                function deepCount(a){ <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;let sum = a.length; <br> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;for (let element of a) { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (Array.isArray(element)) { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum += deepCount(element); <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;} <br> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return sum; <br>
+                } <br><br>
             </code>
             <img src="https://www.codewars.com/users/dislaty/badges/small" alt="codewars-badge">
         </section>
@@ -95,7 +101,7 @@
                 <li>HTML and CSS Tutorials on the <a href="https://htmlacademy.ru/study">www.htmlacademy.ru</a></li>
                 <li>JavaScript course on Udemy - <a href="https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/">JavaScript - The Complete Guide 2021 (Beginner + Advanced)</a> (aborted after DOM topic in connection with the start of the RSSchool courses)</li>
                 <li>JavaScript Manual on <a href="https://learn.javascript.ru/">learnjavascript.ru</a> (in progress)</li>
-                <li>RS Schools Course «JavaScript/Front-end. Stage 0»</li>
+                <li>RS Schools Course «JavaScript/Front-end. Stage 0». <a href="https://app.rs.school/certificate/6z25j087">CERTIFICATE</a></li>
             </ul>
         </section>
         <section class="section" id="languages">

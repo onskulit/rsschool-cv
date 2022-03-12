@@ -1,4 +1,5 @@
-# Latyshev Dmitriy 
+# Latyshev Dmitriy
+## Junior front-end developer
 
 ## Contacts
 
@@ -27,17 +28,19 @@ I believe that using my personal qualities I can achieve a lot in programming.
 
 ## Code Examples
 
-**Assignment:** There is an array with some numbers. All numbers are equal except for one. Try to find it!
+**Assignment:** Your task is to create a function deepCount that returns the number of ALL elements within an array, including any within inner-level arrays.
 
 ```
-function findUniq(arr) {
-  let sortedArray = arr.slice().sort((a, b) => a - b);
+function deepCount(a){
+  let sum = a.length;
   
-  if (sortedArray[0] < sortedArray[1]) {
-    return sortedArray[0];
-  } else if (sortedArray[sortedArray.length - 2] < sortedArray[sortedArray.length - 1]) {
-    return sortedArray[sortedArray.length - 1];
+  for (let element of a) {
+    if (Array.isArray(element)) {
+      sum += deepCount(element);
+    }
   }
+    
+  return sum;
 }
 ```
 ![Codewars badge](https://www.codewars.com/users/dislaty/badges/large)
@@ -52,7 +55,7 @@ function findUniq(arr) {
 * HTML and CSS Tutorials on the [www.htmlacademy.ru](https://htmlacademy.ru/study)
 * JavaScript course on Udemy - [JavaScript - The Complete Guide 2021 (Beginner + Advanced)](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/) (aborted after DOM topic in connection with the start of the RSSchool courses)
 * JavaScript Manual on [learnjavascript.ru](https://learn.javascript.ru/) (in progress)
-* RS Schools Course «JavaScript/Front-end. Stage 0»
+* RS Schools Course «JavaScript/Front-end. Stage 0». [CERTIFICATE](https://app.rs.school/certificate/6z25j087)
 
 ## Languages
 
@@ -70,3 +73,10 @@ function findUniq(arr) {
 * Urbanism
 * Basketball
 * Literature
+
+## Projects
+
+* [portfolio](https://onskulit.github.io/stage0-projects/portfolio/)
+* [custom audio player](https://onskulit.github.io/stage0-projects/audio-player/)
+* [movie app](https://onskulit.github.io/stage0-projects/movie-app/)
+* [tic tac toe](https://onskulit.github.io/stage0-projects/tic-tac-toe/)
