@@ -27,7 +27,7 @@ const projects = [
     },
     {
         imgSrc: './img/projects/tic-tac-toe.PNG',
-        deploySrc: 'https://onskulit.github.io/stage0-projects/portfolio/',
+        deploySrc: 'https://onskulit.github.io/stage0-projects/tic-tac-toe/',
         projectTitle: 'Tic Tac Toe',
         tags: ['JS', 'HTML5', 'CSS3', 'flex', 'grid'],
         githubSrc: 'https://github.com/onskulit/stage0-projects/tree/main/tic-tac-toe',

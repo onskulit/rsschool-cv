@@ -60,7 +60,7 @@ html {
     background-color: rgb(221, 221, 221);
 }
 
-.section-profile {
+.profile {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -68,6 +68,29 @@ html {
     width:100%;
     color: rgb(40, 40, 40);
     border-bottom: solid rgb(221, 221, 221) 10px;
+}
+
+.profile__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile__name {
+    position: relative;
+    font-size: 2rem;
+    margin: 0; padding: 10px 0 0 10px;
+}
+
+.profile__name:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 50%;
+    margin-left: -25%;
+    height: 3px;    
+    background-color: rgb(211, 124, 140);
 }
 
 .section {
@@ -78,7 +101,7 @@ html {
 }
 
 .section p {
-    line-height: 1.5em;
+    line-height: 1.5rem;
 }
 
 .section:last-child {
@@ -247,7 +270,7 @@ html {
         justify-content: space-around;
     }
 
-    .section-profile {
+    .profile {
         flex-direction: column;
         justify-content: flex-start;
     }
@@ -257,6 +280,6 @@ html {
     }
 
     .project {
-        width: 90%;
+        width: 100%;
     }
 }
