@@ -82,22 +82,30 @@ projects.forEach(project => {
     createProject(project);
 })
 
-/*
-                <div class="project">
-                    <a href="https://onskulit.github.io/stage0-projects/portfolio/">
-                        <div class="project__cover">
-                            <ul class="project__tags">
-                                <li class="tag">adaptive</li>
-                                <li class="tag">JS</li>
-                                <li class="tag">HTML5</li>
-                                <li class="tag">CSS3</li>
-                            </ul>
-                        </div>
-                    </a>
-                    <h3 class="project-title">Portfolio
-                        <a href="https://github.com/onskulit/stage0-projects/tree/main/portfolio">
-                            <img src="./img/GitHub-Mark.svg" alt="github-logo" height="100%">
-                        </a>
-                    </h3>
-                </div> 
-*/
+// adaptive menu
+
+const hamburgerIcon = document.querySelector('.hamburger');
+const navigation = document.querySelector('.nav-list');
+const backdrop = document.querySelector('.backdrop');
+
+const closeHamburgerMenu = () => {
+    hamburgerIcon.classList.remove('is-active');
+    navigation.classList.remove('adaptive-menu');
+    backdrop.classList.remove('active');
+};
+
+hamburgerIcon.addEventListener('click', () => {
+    hamburgerIcon.classList.toggle('is-active');
+    navigation.classList.toggle('adaptive-menu');
+    backdrop.classList.toggle('active');
+}); 
+
+navigation.addEventListener('click', (event) => {
+    if (event.target.classList.contains('nav-link')) {
+        closeHamburgerMenu();
+    }
+});
+
+backdrop.addEventListener('click', () => {
+    closeHamburgerMenu();
+});
