@@ -55,7 +55,7 @@ function deepCount(a){
 * HTML and CSS Tutorials on the [www.htmlacademy.ru](https://htmlacademy.ru/study)
 * JavaScript course on Udemy - [JavaScript - The Complete Guide 2021 (Beginner + Advanced)](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/) (aborted after DOM topic in connection with the start of the RSSchool courses)
 * JavaScript Manual on [learnjavascript.ru](https://learn.javascript.ru/) (in progress)
-* RS Schools Course «JavaScript/Front-end. Stage 0». [CERTIFICATE](https://app.rs.school/certificate/6z25j087)
+* RS Schools Course «JavaScript/Front-end. Stage 0». [CERTIFICATE](https://app.rs.school/certificate/fqpx4ob1)
 
 ## Languages
 
