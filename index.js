@@ -5,10 +5,17 @@
 
 const projects = [
     {
+        imgSrc: './img/projects/shelter.PNG',
+        deploySrc: 'https://rolling-scopes-school.github.io/onskulit-JSFE2022Q1/shelter/pages/main/',
+        projectTitle: 'Shelter',
+        tags: ['JS', 'HTML5', 'BEM', 'SCSS', 'adaptive'],
+        githubSrc: 'https://github.com/onskulit/stage0-projects/tree/main/portfolio',
+    },
+    {
         imgSrc: './img/projects/potfolio.PNG',
         deploySrc: 'https://onskulit.github.io/stage0-projects/portfolio/',
         projectTitle: 'Portfolio',
-        tags: ['JS', 'HTML5', 'CSS3', 'flex'],
+        tags: ['JS', 'HTML5', 'CSS3', 'adaptive'],
         githubSrc: 'https://github.com/onskulit/stage0-projects/tree/main/portfolio',
     },
     {
