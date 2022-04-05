@@ -9,7 +9,7 @@ const projects = [
         deploySrc: 'https://rolling-scopes-school.github.io/onskulit-JSFE2022Q1/shelter/pages/main/',
         projectTitle: 'Shelter',
         tags: ['JS', 'HTML5', 'BEM', 'SCSS', 'adaptive'],
-        githubSrc: 'https://github.com/onskulit/stage0-projects/tree/main/portfolio',
+        githubSrc: 'https://github.com/onskulit/',
     },
     {
         imgSrc: './img/projects/potfolio.PNG',
