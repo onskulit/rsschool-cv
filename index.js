@@ -12,6 +12,13 @@ const projects = [
         githubSrc: 'https://github.com/onskulit/',
     },
     {
+        imgSrc: './img/projects/virtual-keyboard.PNG',
+        deploySrc: 'https://rolling-scopes-school.github.io/onskulit-JSFE2022Q1/virtual-keyboard/',
+        projectTitle: 'Virtual-keyboard',
+        tags: ['JS', 'OOP', 'modules', 'HTML5', 'SCSS'],
+        githubSrc: 'https://github.com/onskulit/',
+    },
+    {
         imgSrc: './img/projects/potfolio.PNG',
         deploySrc: 'https://onskulit.github.io/stage0-projects/portfolio/',
         projectTitle: 'Portfolio',
