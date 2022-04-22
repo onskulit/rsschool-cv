@@ -46,6 +46,13 @@ const projects = [
         tags: ['JS', 'HTML5', 'CSS3', 'flex', 'grid'],
         githubSrc: 'https://github.com/onskulit/stage0-projects/tree/main/tic-tac-toe',
     },
+    {
+        imgSrc: './img/projects/meme-slider.PNG',
+        deploySrc: 'https://onskulit.github.io/cssMemSlider/cssMemSlider/index.html',
+        projectTitle: 'Pure Css Slider',
+        tags: ['HTML5', 'CSS3', 'flex'],
+        githubSrc: 'https://github.com/onskulit/cssMemSlider/tree/gh-pages/cssMemSlider',
+    },
 ]
 
 const projectsContainer = document.querySelector('.projects');
