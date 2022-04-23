@@ -49,7 +49,7 @@ const projects = [
     {
         imgSrc: './img/projects/meme-slider.PNG',
         deploySrc: 'https://onskulit.github.io/cssMemSlider/cssMemSlider/index.html',
-        projectTitle: 'Pure Css Slider',
+        projectTitle: 'Pure CSS Slider',
         tags: ['HTML5', 'CSS3', 'flex'],
         githubSrc: 'https://github.com/onskulit/cssMemSlider/tree/gh-pages/cssMemSlider',
     },
