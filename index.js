@@ -19,6 +19,13 @@ const projects = [
         githubSrc: 'https://github.com/onskulit/',
     },
     {
+        imgSrc: './img/projects/html-builder.PNG',
+        deploySrc: 'https://github.com/onskulit/HTML-builder/tree/main/06-build-page',
+        projectTitle: 'HTML-builder',
+        tags: ['Node.js'],
+        githubSrc: 'https://github.com/onskulit/HTML-builder/blob/main/06-build-page/index.js',
+    },
+    {
         imgSrc: './img/projects/potfolio.PNG',
         deploySrc: 'https://onskulit.github.io/stage0-projects/portfolio/',
         projectTitle: 'Portfolio',
@@ -49,7 +56,7 @@ const projects = [
     {
         imgSrc: './img/projects/meme-slider.PNG',
         deploySrc: 'https://onskulit.github.io/cssMemSlider/cssMemSlider/index.html',
-        projectTitle: 'Pure Css Slider',
+        projectTitle: 'Pure CSS Slider',
         tags: ['HTML5', 'CSS3', 'flex'],
         githubSrc: 'https://github.com/onskulit/cssMemSlider/tree/gh-pages/cssMemSlider',
     },
