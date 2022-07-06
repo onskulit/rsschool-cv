@@ -5,6 +5,13 @@
 
 const projects = [
     {
+        imgSrc: './img/projects/news-migration.png',
+        deploySrc: 'https://rolling-scopes-school.github.io/onskulit-JSFE2022Q1/dist/',
+        projectTitle: 'News (Migration to TS)',
+        tags: ['TypeScript', 'Webpack'],
+        githubSrc: 'https://github.com/onskulit/',
+    },
+    {
         imgSrc: './img/projects/shelter.PNG',
         deploySrc: 'https://rolling-scopes-school.github.io/onskulit-JSFE2022Q1/shelter/pages/main/',
         projectTitle: 'Shelter',
