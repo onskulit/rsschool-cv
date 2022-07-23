@@ -4,6 +4,20 @@
 */
 
 const projects = [
+    /* {
+        imgSrc: './img/projects/react-github-api.PNG',
+        deploySrc: 'https://onskulit.github.io/react-github-api/build',
+        projectTitle: 'Github-api',
+        tags: ['React', 'React-Toolkit', 'Typescript', 'Tailwind'],
+        githubSrc: 'https://github.com/onskulit/react-github-api',
+    }, */
+    {
+        imgSrc: './img/projects/online-store.PNG',
+        deploySrc: 'https://onskulit.github.io/Online-Store/dist/',
+        projectTitle: 'Online-Store',
+        tags: ['TypeScript', 'Webpack', 'SASS'],
+        githubSrc: 'https://github.com/onskulit/Online-Store/tree/online-store',
+    },
     {
         imgSrc: './img/projects/news-migration.PNG',
         deploySrc: 'https://rolling-scopes-school.github.io/onskulit-JSFE2022Q1/dist/',
