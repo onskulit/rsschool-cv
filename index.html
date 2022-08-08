@@ -9,22 +9,20 @@
     <link rel="icon" href="img/favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">  
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-    <script type="module" src="index.js" defer></script>
+    <script type="module" src="index.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="container"></div>
         <nav class="nav">
             <ul class="nav-list">
-              <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-              <li class="nav-item"><a href="#about-me" class="nav-link">About me</a></li>
-              <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-              <li class="nav-item"><a href="#code-example" class="nav-link">Code example</a></li>
-              <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-              <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
-              <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
-              <li class="nav-item"><a href="#hobbies" class="nav-link">Hobbies</a></li>
-              <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+              <li class="nav-item"><a href="#contacts" class="nav-link" data-lang="contacts">Contacts</a></li>
+              <li class="nav-item"><a href="#about-me" class="nav-link" data-lang="about-me">About me</a></li>
+              <li class="nav-item"><a href="#skills" class="nav-link" data-lang="skills">Skills</a></li>
+              <li class="nav-item"><a href="#courses" class="nav-link" data-lang="courses">Courses</a></li>
+              <li class="nav-item"><a href="#education" class="nav-link" data-lang="education">Education</a></li>
+              <li class="nav-item"><a href="#hobbies" class="nav-link" data-lang="hobbies">Hobbies</a></li>
+              <li class="nav-item"><a href="#projects" class="nav-link" data-lang="projects">Projects</a></li>
             </ul>
         </nav>
         <div class="hamburger">
@@ -39,29 +37,40 @@
         <section class="profile" id="profile">
             <img src="img/my-photo.jpg" alt="avatar" width="250">
             <div class="profile__title">
-                <h1 class="profile__name">LATYSHEV DMITRIY</h1>
+                <h1 class="profile__name" data-lang="profile-name">LATYSHEV DMITRIY</h1>
                 <h2 class="profile__position">JUNIOR FRONT-END DEVELOPER</h2>
             </div>
         </section>
         <section class="section" id="contacts">
-            <h2 class="section-title">CONTACTS</h2>
+            <h2 class="section-title" data-lang="contacts-title">CONTACTS</h2>
             <ul class="regular-list">
-                <li>Phone (BY): <a href="tel:+375295612911">+375 (29) 561-29-11</a></li>
+                <li>
+                    <span data-lang="contacts-phone-ru">Phone (RU)</span>: <a href="tel:+375295612911">+375 (29) 561-29-11</a>
+                </li>
+                <li>
+                    <span data-lang="contacts-phone-by">Phone (BY)</span>: <a href="tel:+375295612911">+375 (29) 561-29-11</a>
+                </li>
                 <li>E-mail: <a href="mailto:dislaty@mail.ru">dislaty@mail.ru</a></li>
                 <li>Telegram: <a href="https://t.me/dislaty">@dislaty</a></li>
                 <li>GitHub: <a href="https://github.com/onskulit">onskulit</a></li>
             </ul>
         </section>
         <section class="section" id="about-me">
-            <h2 class="section-title">ABOUT ME</h2>
+            <h2 class="section-title" data-lang="about-me-title">ABOUT ME</h2>
             <p>
-            I am 24 years old, the last year I have been working as a procurement specialist. Before that, I worked for a year as a project manager in a design company. <br> <br>
-            I started to develop myself in programming, as I realized that at work it's not enough for me to use only soft skills. I want to feel like I'm using my full potential, doing something worthwhile and meaningful. Ever since I started learning programming, I feel like my brain is working to its fullest. This gives me great pleasure! <br> <br>
-            I believe that using my personal qualities I can achieve a lot in programming.
+            <span data-lang="about-me-content-1">
+                I am 24 years old, the last year I have been working as a procurement specialist. Before that, I worked for a year as a project manager in a design company. 
+            </span><br><br>
+            <span data-lang="about-me-content-2">
+                I started to develop myself in programming, as I realized that at work it's not enough for me to use only soft skills. I want to feel like I'm using my full potential, doing something worthwhile and meaningful. Ever since I started learning programming, I feel like my brain is working to its fullest. This gives me great pleasure!
+            </span><br><br>
+            <span data-lang="about-me-content-3">
+                I believe that using my personal qualities I can achieve a lot in programming. 
+            </span>
             </p>
         </section>
         <section class="section" id="skills">
-            <h2 class="section-title">SKILLS</h2>
+            <h2 class="section-title" data-lang="skills-title">SKILLS</h2>
             <ul class="regular-list">
                 <li>HTML5, CSS3</li>
                 <li>Sass, BEM </li>
@@ -77,22 +86,36 @@
             <img src="https://www.codewars.com/users/dislaty/badges/small" alt="codewars-badge">
         </section>
         <section class="section" id="courses">
-            <h2 class="section-title">COURSES</h2>
+            <h2 class="section-title" data-lang="courses-title">COURSES</h2>
             <ul class="regular-list">
-                <li>HTML and CSS Tutorials on the <a href="https://htmlacademy.ru/study">www.htmlacademy.ru</a></li>
-                <li>JavaScript course on Udemy - <a href="https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/">JavaScript - The Complete Guide 2021 (Beginner + Advanced)</a> (aborted after DOM topic in connection with the start of the RSSchool courses)</li>
-                <li>JavaScript Manual on <a href="https://learn.javascript.ru/">learnjavascript.ru</a> (in progress)</li>
-                <li>RS Schools Course «JavaScript/Front-end. Stage 0». <a href="https://app.rs.school/certificate/fqpx4ob1">CERTIFICATE</a></li>
-                <li>RS Schools Course «JavaScript/Front-end. Stage 1». </li>
-                <li>RS Schools Course «JavaScript/Front-end. Stage 2». (In progress) </li>
+                <li>
+                    <span data-lang="courses-html-academy">HTML and CSS Tutorials on the</span> <a href="https://htmlacademy.ru/study">www.htmlacademy.ru</a>
+                </li>
+                <li>
+                    <span data-lang="courses-udemy">JavaScript course on Udemy</span> - <a href="https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/">JavaScript - The Complete Guide 2021 (Beginner + Advanced)</a>
+                </li>
+                <li>
+                    <span data-lang="courses-learnJS">JavaScript Manual on</span> <a href="https://learn.javascript.ru/">learnjavascript.ru</a>
+                </li>
+                <li> <a href="https://github.com/rolling-scopes-school/tasks"><span data-lang="courses-rsschool">RSSchools Course</span></a>
+                    <ul>
+                        <li>
+                            <span data-lang="courses-rsschool">RSSchools Course</span>
+                            «JavaScript/Front-end. Stage 0».
+                            <a href="https://app.rs.school/certificate/fqpx4ob1"><span data-lang="courses-certificate">CERTIFICATE</span></a>
+                        </li>
+                        <li><span data-lang="courses-rsschool">RSSchools Course</span> «JavaScript/Front-end. Stage 1». </li>
+                        <li><span data-lang="courses-rsschool">RSSchools Course</span> «JavaScript/Front-end. Stage 2». </li>
+                    </ul>
+                </li>
             </ul>
         </section>
         <section class="section" id="education">
-            <h2 class="section-title">EDUCATION</h2>
+            <h2 class="section-title" data-lang="education-title">EDUCATION</h2>
             <ul class="regular-list">
-                <li> National Research Nuclear University MEPhI
+                <li> <span data-lang="education-university">National Research Nuclear University MEPhI</span>
                     <ul>
-                        <li> economic security </li>
+                        <li data-lang="education-speciality"> economic security </li>
                     </ul>
                 </li>
             </ul>
@@ -110,16 +133,17 @@
             </ul>
         </section> -->
         <section class="section" id="hobbies">
-            <h2 class="section-title">HOBBIES</h2>
+            <h2 class="section-title" data-lang="hobbies-title">HOBBIES</h2>
             <ul class="regular-list">
-                <li>Cinema</li>
-                <li>Urbanism</li>
-                <li>Basketball</li>
-                <li>Literature</li>
+                <li data-lang="hobbies-programming">Programming</li>
+                <li data-lang="hobbies-cinema">Cinema</li>
+                <li data-lang="hobbies-urbanism">Urbanism</li>
+                <li data-lang="hobbies-basketball">Basketball</li>
+                <li data-lang="hobbies-literature">Literature</li>
             </ul>
         </section>
         <section class="section projects-section" id="projects">
-            <h2 class="section-title">PROJECTS</h2>
+            <h2 class="section-title" data-lang="projects-title">PROJECTS</h2>
             <div class="projects"> 
             </div>
         </section>
