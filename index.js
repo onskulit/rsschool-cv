@@ -4,13 +4,20 @@
 */
 
 const projects = [
-    /* {
+    {
         imgSrc: './img/projects/react-github-api.PNG',
-        deploySrc: 'https://onskulit.github.io/react-github-api/build',
+        deploySrc: 'https://onskulit.github.io/react-github-api/',
         projectTitle: 'Github-api',
         tags: ['React', 'React-Toolkit', 'Typescript', 'Tailwind'],
         githubSrc: 'https://github.com/onskulit/react-github-api',
-    }, */
+    },
+    {
+        imgSrc: './img/projects/async-race.PNG',
+        deploySrc: 'https://onskulit.github.io/async-race/',
+        projectTitle: 'Async Race',
+        tags: ['React', 'Typescript', 'Tailwind'],
+        githubSrc: 'https://github.com/onskulit/async-race/tree/async-race',
+    },
     {
         imgSrc: './img/projects/online-store.PNG',
         deploySrc: 'https://onskulit.github.io/Online-Store/dist/',
@@ -23,21 +30,21 @@ const projects = [
         deploySrc: 'https://rolling-scopes-school.github.io/onskulit-JSFE2022Q1/dist/',
         projectTitle: 'News (Migration to TS)',
         tags: ['TypeScript', 'Webpack'],
-        githubSrc: 'https://github.com/onskulit/',
+        githubSrc: 'https://github.com/onskulit/stage1-projects/tree/migration',
     },
     {
         imgSrc: './img/projects/shelter.PNG',
         deploySrc: 'https://rolling-scopes-school.github.io/onskulit-JSFE2022Q1/shelter/pages/main/',
         projectTitle: 'Shelter',
         tags: ['JS', 'HTML5', 'BEM', 'SCSS', 'adaptive'],
-        githubSrc: 'https://github.com/onskulit/',
+        githubSrc: 'https://github.com/onskulit/stage1-projects/tree/shelter',
     },
     {
         imgSrc: './img/projects/virtual-keyboard.PNG',
         deploySrc: 'https://rolling-scopes-school.github.io/onskulit-JSFE2022Q1/virtual-keyboard/',
         projectTitle: 'Virtual-keyboard',
         tags: ['JS', 'OOP', 'modules', 'HTML5', 'SCSS'],
-        githubSrc: 'https://github.com/onskulit/',
+        githubSrc: 'https://github.com/onskulit/stage1-projects/tree/virtual-keyboard',
     },
     {
         imgSrc: './img/projects/html-builder.PNG',
