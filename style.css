@@ -18,6 +18,10 @@ html {
 
 .header {
     background-color: rgb(253, 226, 231);
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main {
@@ -36,6 +40,19 @@ html {
 .container {
     max-width: 1440px;
     margin: 0 auto;
+}
+
+.languages {
+    font-size: 16px;
+}
+
+.languages-item:hover {
+    cursor: pointer;
+}
+
+.languages-item.active {
+    cursor: default;
+    border-bottom: solid 2px rgb(40, 40, 40);
 }
 
 .nav-list {

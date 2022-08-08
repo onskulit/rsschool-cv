@@ -79,6 +79,9 @@ backdrop.addEventListener('click', () => {
 
 // languages
 
+const languagesBtnsContainer = document.querySelector('.languages');
+const languageBtns = document.querySelectorAll('.languages-item');
+
 const getTranslate = (lng) => {
     const translatableItems = document.querySelectorAll('[data-lang]');
     translatableItems.forEach((item) => {
@@ -86,4 +89,28 @@ const getTranslate = (lng) => {
     });
 };
 
-getTranslate('ru');
+const removeActiveLang = () => {
+    languageBtns.forEach((lng) => {
+        if (lng.classList.contains('active')) {
+            lng.classList.remove('active');
+        }
+    });
+};
+
+const activateLangStyles = (target) => {
+    target.classList.add('active');
+}
+
+languagesBtnsContainer.addEventListener('click', (e) => {
+    if(e.target.classList.contains('languages-item')) {
+        removeActiveLang();
+        activateLangStyles(e.target);
+        console.log(e.target.dataset.langswitch);
+        getTranslate(e.target.dataset.langswitch);
+    }
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+    activateLangStyles(languageBtns[1]);
+    getTranslate('ru');
+});
