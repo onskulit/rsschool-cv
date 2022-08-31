@@ -1,73 +1,5 @@
-/* tags
-    Layout: HTML5, CSS3, SASS, BEM, adaptive, flex
-    JS: API, game, player
-*/
-
-const projects = [
-    {
-        imgSrc: './img/projects/news-migration.PNG',
-        deploySrc: 'https://rolling-scopes-school.github.io/onskulit-JSFE2022Q1/dist/',
-        projectTitle: 'News (Migration to TS)',
-        tags: ['TypeScript', 'Webpack'],
-        githubSrc: 'https://github.com/onskulit/',
-    },
-    {
-        imgSrc: './img/projects/shelter.PNG',
-        deploySrc: 'https://rolling-scopes-school.github.io/onskulit-JSFE2022Q1/shelter/pages/main/',
-        projectTitle: 'Shelter',
-        tags: ['JS', 'HTML5', 'BEM', 'SCSS', 'adaptive'],
-        githubSrc: 'https://github.com/onskulit/',
-    },
-    {
-        imgSrc: './img/projects/virtual-keyboard.PNG',
-        deploySrc: 'https://rolling-scopes-school.github.io/onskulit-JSFE2022Q1/virtual-keyboard/',
-        projectTitle: 'Virtual-keyboard',
-        tags: ['JS', 'OOP', 'modules', 'HTML5', 'SCSS'],
-        githubSrc: 'https://github.com/onskulit/',
-    },
-    {
-        imgSrc: './img/projects/html-builder.PNG',
-        deploySrc: 'https://github.com/onskulit/HTML-builder/tree/main/06-build-page',
-        projectTitle: 'HTML-builder',
-        tags: ['Node.js'],
-        githubSrc: 'https://github.com/onskulit/HTML-builder/blob/main/06-build-page/index.js',
-    },
-    {
-        imgSrc: './img/projects/potfolio.PNG',
-        deploySrc: 'https://onskulit.github.io/stage0-projects/portfolio/',
-        projectTitle: 'Portfolio',
-        tags: ['JS', 'HTML5', 'CSS3', 'adaptive'],
-        githubSrc: 'https://github.com/onskulit/stage0-projects/tree/main/portfolio',
-    },
-    {
-        imgSrc: './img/projects/audio-player.PNG',
-        deploySrc: 'https://onskulit.github.io/stage0-projects/audio-player/',
-        projectTitle: 'Custom Video Player',
-        tags: ['JS', 'HTML5', 'CSS3', 'flex'],
-        githubSrc: 'https://github.com/onskulit/stage0-projects/tree/main/audio-player',
-    },
-    {
-        imgSrc: './img/projects/movie-app.PNG',
-        deploySrc: 'https://onskulit.github.io/stage0-projects/movie-app/',
-        projectTitle: 'Movie App',
-        tags: ['API', 'JS', 'HTML5', 'CSS3', 'flex'],
-        githubSrc: 'https://github.com/onskulit/stage0-projects/tree/main/movie-app',
-    },
-    {
-        imgSrc: './img/projects/tic-tac-toe.PNG',
-        deploySrc: 'https://onskulit.github.io/stage0-projects/tic-tac-toe/',
-        projectTitle: 'Tic Tac Toe',
-        tags: ['JS', 'HTML5', 'CSS3', 'flex', 'grid'],
-        githubSrc: 'https://github.com/onskulit/stage0-projects/tree/main/tic-tac-toe',
-    },
-    {
-        imgSrc: './img/projects/meme-slider.PNG',
-        deploySrc: 'https://onskulit.github.io/cssMemSlider/cssMemSlider/index.html',
-        projectTitle: 'Pure CSS Slider',
-        tags: ['HTML5', 'CSS3', 'flex'],
-        githubSrc: 'https://github.com/onskulit/cssMemSlider/tree/gh-pages/cssMemSlider',
-    },
-]
+import { projects } from "./projects/projects.js";
+import { languages } from "./translation/languages.js";
 
 const projectsContainer = document.querySelector('.projects');
 
@@ -143,4 +75,42 @@ navigation.addEventListener('click', (event) => {
 
 backdrop.addEventListener('click', () => {
     closeHamburgerMenu();
+});
+
+// languages
+
+const languagesBtnsContainer = document.querySelector('.languages');
+const languageBtns = document.querySelectorAll('.languages-item');
+
+const getTranslate = (lng) => {
+    const translatableItems = document.querySelectorAll('[data-lang]');
+    translatableItems.forEach((item) => {
+        item.textContent = languages[lng][item.dataset.lang];
+    });
+};
+
+const removeActiveLang = () => {
+    languageBtns.forEach((lng) => {
+        if (lng.classList.contains('active')) {
+            lng.classList.remove('active');
+        }
+    });
+};
+
+const activateLangStyles = (target) => {
+    target.classList.add('active');
+}
+
+languagesBtnsContainer.addEventListener('click', (e) => {
+    if(e.target.classList.contains('languages-item')) {
+        removeActiveLang();
+        activateLangStyles(e.target);
+        console.log(e.target.dataset.langswitch);
+        getTranslate(e.target.dataset.langswitch);
+    }
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+    activateLangStyles(languageBtns[1]);
+    getTranslate('ru');
 });
