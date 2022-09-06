@@ -5,6 +5,13 @@
 
 export const projects = [
   {
+    imgSrc: "./img/projects/rslang.PNG",
+    deploySrc: "https://onskulit.github.io/rslang/",
+    projectTitle: "RSLang",
+    tags: ["React", "Redux Toolkit", "RTK Query", "Typescript", "Ant Design"],
+    githubSrc: "https://onskulit.github.io/rslang/",
+  },
+  {
     imgSrc: "./img/projects/react-github-api.PNG",
     deploySrc: "https://onskulit.github.io/react-github-api/",
     projectTitle: "Github-api",
